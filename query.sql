@@ -1,5 +1,6 @@
 WITH date_range (start_date) AS (
     SELECT '2021-01-01'
+    from dual
     UNION ALL
     SELECT DATE(start_date, '+1 day') 
     FROM date_range
